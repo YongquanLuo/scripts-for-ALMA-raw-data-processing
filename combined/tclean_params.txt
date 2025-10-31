@@ -1,5 +1,5 @@
-concat_contsub = 'I16037-5223.ms.contsub.concat'
-field = 'I16037-5223'
+concat_contsub = 'I***.ms.contsub.concat'
+field = 'I***'
 width = '0.488310MHz'
 nchan = 3840
 threshold_mfs = '0.5mJy'
