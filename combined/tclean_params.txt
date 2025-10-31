@@ -1,0 +1,8 @@
+concat_contsub = 'I16037-5223.ms.contsub.concat'
+field = 'I16037-5223'
+width = '0.488310MHz'
+nchan = 3840
+threshold_mfs = '0.5mJy'
+threshold_cube = '20mJy'
+imsize = [900,900]
+cell = '0.05arcsec'

@@ -1,0 +1,9 @@
+visname = 'I17160-3707.ms.TM2.spw25_27_29_31'
+visname_contsub = 'I17160-3707.ms.TM2.spw25_27_29_31.contsub'
+array = 'TM2'
+field = 'I17160-3707'
+width = '0.488281MHz'
+nchan = 3840
+threshold = '30mJy'
+imsize = [300,300]
+cell = '0.27arcsec'
