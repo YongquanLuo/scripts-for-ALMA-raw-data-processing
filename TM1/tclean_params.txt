@@ -1,7 +1,7 @@
-visname = 'I17160-3707.ms.TM1.spw25_27_29_31'
-visname_contsub = 'I17160-3707.ms.TM1.spw25_27_29_31.contsub'
+visname = 'I***.ms.TM1.spw25_27_29_31'
+visname_contsub = 'I***.ms.TM1.spw25_27_29_31.contsub'
 array = 'TM1'
-field = 'I17160-3707'
+field = 'I***'
 width = '0.488310MHz'
 nchan = 3840
 threshold = '20mJy'
