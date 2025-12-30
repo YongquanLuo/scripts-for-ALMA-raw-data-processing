@@ -5,14 +5,28 @@ print("The tclean params for lines cube are at tclean_params.txt")
 params = {}
 with open('tclean_params.txt', 'r') as f:
     for line in f:
-        if '=' in line:
-            key, val = line.split('=', 1)
-            key = key.strip()
-            val = val.strip()
-            try:
-                params[key] = ast.literal_eval(val)  
-            except Exception:
-                params[key] = val.strip("'\"")
+        line = line.strip()
+
+        #  跳过空行
+        if not line:
+            continue
+
+        #  跳过注释行
+        if line.startswith('#'):
+            continue
+
+        #  只处理 key = value 形式
+        if '=' not in line:
+            continue
+
+        key, val = line.split('=', 1)
+        key = key.strip()
+        val = val.strip()
+
+        try:
+            params[key] = ast.literal_eval(val)
+        except Exception:
+            params[key] = val.strip("'\"")
 
 visname = params['concat_contsub']
 field = params['field']
