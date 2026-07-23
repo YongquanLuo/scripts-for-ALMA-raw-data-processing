@@ -8,20 +8,17 @@ print("The config file is:", config_file)
 params = {}
 with open(config_file, 'r') as f:
     for line in f:
-    
-	line = line.strip()
-	
-	if not line or line.startswith("#"):
+		line = line.strip()
+		if not line or line.startswith("#"):
             continue
-  
-    if '=' in line:
-        key, val = line.split('=', 1)
-        key = key.strip()
-        val = val.strip()
-        try:
-            params[key] = ast.literal_eval(val)  
-        except Exception:
-            params[key] = val.strip("'\"") 
+		if '=' in line:
+			key, val = line.split('=', 1)
+			key = key.strip()
+			val = val.strip()
+			try:
+				params[key] = ast.literal_eval(val)  
+			except Exception:
+				params[key] = val.strip("'\"") 
 
 array = params['array']
 field = params['field']
